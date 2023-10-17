@@ -1,0 +1,58 @@
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+* {
+  /* user-select: none; */
+}
+
+@keyframes card-bounce {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+a {
+  color: #00ccff;
+}
+
+/* @keyframes card-hover {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+} */
+
+.card-hover {
+  transition: all 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  /* animation: card-hover 0.5s ease; */
+  /* animation-fill-mode: forwards; */
+}
+
+.rpn-notification-card {
+  min-width: 300px;
+}
+
+.rpn-notification-card .message {
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.MuiSelect-select.MuiInputBase-input {
+  display: flex;
+}
